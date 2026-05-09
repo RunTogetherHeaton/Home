@@ -5,5 +5,13 @@
     "distance": 6.35,
     "gpx": "./gpx/Whitefield Wander Shorter (through the meadow).gpx",
     "strava": "https://www.strava.com/routes/3423095791205749310"
+  },
+  
+  {
+    "id": "321loops",
+    "name": "3-2-1 Loopa",
+    "distance": 6.35,
+    "gpx": "./gpx/3-2-1 Loops.gpx",
+    "strava": "https://www.strava.com/routes/3315794949942727652"
   }
 ]
