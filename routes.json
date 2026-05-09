@@ -2,7 +2,7 @@
   {
     "id": "whitefield wander short meadow",
     "name": "Whitefield Wander Shorter (Through the Meadow)",
-    "distance": 6.35,
+    "distance": 6.4,
     "gpx": "./gpx/Whitefield Wander Shorter (through the meadow).gpx",
     "strava": "https://www.strava.com/routes/3423095791205749310"
   },
@@ -58,7 +58,7 @@
  {
     "id": "stockingfull",
     "name": "Stocking Run - Full",
-    "distance": 7.3,
+    "distance": 8.4,
     "gpx": "./gpx/Stocking Run - Full.gpx",
     "strava": "https://www.strava.com/routes/3315817179421000540"
  }
