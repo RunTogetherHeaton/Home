@@ -38,6 +38,14 @@
     "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-BNR Loop.gpx",
     "strava": "https://www.strava.com/routes/3328457732853817682"
  },
+
+ {
+    "id": "BNR-Butterstile-Kersal-Moor-Singleton-BOR",
+    "name": "BNR-Butterstile-Kersal-Moor-Singleton-BOR Loop",
+    "distance": 6.92,
+    "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-Singleton-BOR Loop.gpx",
+    "strava": "https://www.strava.com/routes/3328452416926797616"
+ },
   
  {
     "id": "stocking5k",
