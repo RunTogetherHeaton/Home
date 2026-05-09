@@ -21,5 +21,13 @@
     "distance": 7.9,
     "gpx": "./gpx/Same Yet O&B.gpx",
     "strava": "https://www.strava.com/routes/3315789633100939100"
+ },
+  
+ {
+    "id": "henryboddies",
+    "name": "Henry Boddingtons O&B",
+    "distance": 7.9,
+    "gpx": "./gpx/Henry Boddingtons O&B.gpx",
+    "strava": "https://www.strava.com/routes/3415832350484427442"
  }
 ]
