@@ -1,10 +1,10 @@
 [
   {
-    "id": "canal-tempo",
-    "name": "Canal Tempo Run",
-    "distance": 12.4,
-    "gpx": "./gpx/canal-tempo.gpx",
-    "strava": "https://www.strava.com/routes/12345"
+    "id": "whitefield wander short meadow",
+    "name": "Whitefield Wander Shorter (through the meadow)",
+    "distance": 6.35,
+    "gpx": "./gpx/Whitefield Wander Shorter (through the meadow).gpx",
+    "strava": "https://www.strava.com/routes/3423095791205749310"
   },
   {
     "id": "hills-loop",
