@@ -29,5 +29,13 @@
     "distance": 7.9,
     "gpx": "./gpx/Henry Boddingtons O&B.gpx",
     "strava": "https://www.strava.com/routes/3415832350484427442"
+ },
+  
+ {
+    "id": "BNR-Butterstile-Kersal-Moor-BNR",
+    "name": "BNR-Butterstile-Kersal-Moor-BNR Loop",
+    "distance": 5.53,
+    "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-BNR Loop.gpx",
+    "strava": "https://www.strava.com/routes/3328457732853817682"
  }
 ]
