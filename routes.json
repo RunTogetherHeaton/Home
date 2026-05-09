@@ -1,0 +1,16 @@
+[
+  {
+    "id": "canal-tempo",
+    "name": "Canal Tempo Run",
+    "distance": 12.4,
+    "gpx": "./gpx/canal-tempo.gpx",
+    "strava": "https://www.strava.com/routes/12345"
+  },
+  {
+    "id": "hills-loop",
+    "name": "Pennine Hills Loop",
+    "distance": 18.6,
+    "gpx": "./gpx/hills-loop.gpx",
+    "strava": "https://www.strava.com/routes/67890"
+  }
+]
