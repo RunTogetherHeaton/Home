@@ -1,4 +1,120 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Running Routes</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- leaflet-gpx for GPX rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #0f1115;
+      color: #fff;
+    }
+
+    header {
+      padding: 16px;
+      font-size: 20px;
+      font-weight: bold;
+      background: #151924;
+      position: sticky;
+      top: 0;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: #1b2130;
+      padding: 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .map-thumb {
+      height: 120px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    #routeView {
+      display: none;
+    }
+
+    #map {
+      height: 60vh;
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 12px;
+      margin-top: 10px;
+      background: #2d6cdf;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .back {
+      margin-bottom: 10px;
+      display: inline-block;
+      cursor: pointer;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<header>🏃 Running Routes</header>
+
+<div class="container" id="homeView">
+  <div class="grid" id="routesGrid"></div>
+</div>
+
+<div class="container" id="routeView">
+  <div class="back" onclick="showHome()">← Back</div>
+
+  <h2 id="routeName"></h2>
+  <p id="routeInfo"></p>
+
+  <div id="map"></div>
+
+  <a id="stravaLink" class="btn" target="_blank">Open in Strava</a>
+  <a id="gpxDownload" class="btn" download>Download GPX</a>
+</div>
+
+<script>
+let routes = [];
+let map;
+let gpxLayer;
+
+async function loadRoutes() {
+  const res = await fetch('./routes.json');
+  routes = await res.json();
+  renderGrid();
+}
 
 function renderGrid() {
   const grid = document.getElementById('routesGrid');
