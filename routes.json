@@ -37,5 +37,13 @@
     "distance": 5.53,
     "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-BNR Loop.gpx",
     "strava": "https://www.strava.com/routes/3328457732853817682"
+ },
+  
+ {
+    "id": "stocking5k",
+    "name": "Stocking Run 5k",
+    "distance": 5.3,
+    "gpx": "./gpx/Stocking Run 5k.gpx",
+    "strava": "https://www.strava.com/routes/3318214396095219026"
  }
 ]
