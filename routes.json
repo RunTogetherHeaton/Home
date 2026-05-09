@@ -45,5 +45,21 @@
     "distance": 5.3,
     "gpx": "./gpx/Stocking Run 5k.gpx",
     "strava": "https://www.strava.com/routes/3318214396095219026"
+ },
+  
+ {
+    "id": "stocking7k",
+    "name": "Stocking Run 7k",
+    "distance": 7.3,
+    "gpx": "./gpx/Stocking Run 7k.gpx",
+    "strava": "https://www.strava.com/routes/3318215140161349292"
+ },
+  
+ {
+    "id": "stockingfull",
+    "name": "Stocking Run - Full",
+    "distance": 7.3,
+    "gpx": "./gpx/Stocking Run - Full.gpx",
+    "strava": "https://www.strava.com/routes/3315817179421000540"
  }
 ]
