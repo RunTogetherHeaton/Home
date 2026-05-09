@@ -7,10 +7,10 @@
     "strava": "https://www.strava.com/routes/3423095791205749310"
   },
   {
-    "id": "hills-loop",
-    "name": "Pennine Hills Loop",
-    "distance": 18.6,
-    "gpx": "./gpx/hills-loop.gpx",
-    "strava": "https://www.strava.com/routes/67890"
+    "id": "321loops",
+    "name": "3-2-1 Loops",
+    "distance": 5-8km,
+    "gpx": "./gpx/3-2-1 Loops.gpx",
+    "strava": "https://www.strava.com/routes/3315794949942727652"
   }
 ]
