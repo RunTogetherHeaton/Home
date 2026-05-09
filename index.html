@@ -1,1 +1,76 @@
+<!DOCTYPE html>
 
+function renderGrid() {
+  const grid = document.getElementById('routesGrid');
+  grid.innerHTML = '';
+
+  routes.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.innerHTML = `
+      <h3>${r.name}</h3>
+      <p>${r.distance} km</p>
+      <div class="map-thumb" id="thumb-${r.id}"></div>
+    `;
+
+    div.onclick = () => openRoute(r);
+    grid.appendChild(div);
+
+    setTimeout(() => initThumbMap(r), 100);
+  });
+}
+
+function initThumbMap(route) {
+  const map = L.map(`thumb-${route.id}`, {
+    zoomControl: false,
+    attributionControl: false,
+    dragging: false,
+    scrollWheelZoom: false
+  }).setView([53.6, -2.1], 12);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+  new L.GPX(route.gpx, {
+    async: true,
+    polyline_options: { color: 'cyan' }
+  }).on('loaded', function(e) {
+    map.fitBounds(e.target.getBounds());
+  }).addTo(map);
+}
+
+function openRoute(route) {
+  document.getElementById('homeView').style.display = 'none';
+  document.getElementById('routeView').style.display = 'block';
+
+  document.getElementById('routeName').innerText = route.name;
+  document.getElementById('routeInfo').innerText = route.distance + ' km';
+
+  document.getElementById('stravaLink').href = route.strava;
+  document.getElementById('gpxDownload').href = route.gpx;
+
+  setTimeout(() => {
+    if (map) map.remove();
+
+    map = L.map('map').setView([53.6, -2.1], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+    gpxLayer = new L.GPX(route.gpx, {
+      async: true,
+      polyline_options: { color: 'lime' }
+    }).on('loaded', function(e) {
+      map.fitBounds(e.target.getBounds());
+    }).addTo(map);
+  }, 100);
+}
+
+function showHome() {
+  document.getElementById('routeView').style.display = 'none';
+  document.getElementById('homeView').style.display = 'block';
+}
+
+loadRoutes();
+</script>
+
+</body>
+</html>
