@@ -17,7 +17,7 @@
   
  {
     "id": "sameyet",
-    "name": "Same Yet O&B                                  ",
+    "name": "Same Yet O&B",
     "distance": 7.9,
     "gpx": "./gpx/Same Yet O&B.gpx",
     "strava": "https://www.strava.com/routes/3315789633100939100"
@@ -25,7 +25,7 @@
   
  {
     "id": "henryboddies",
-    "name": "Henry Boddingtons O&B                         ",
+    "name": "Henry Boddingtons O&B",
     "distance": 7.9,
     "gpx": "./gpx/Henry Boddingtons O&B.gpx",
     "strava": "https://www.strava.com/routes/3415832350484427442"
@@ -33,14 +33,14 @@
   
  {
     "id": "BNR-Butterstile-Kersal-Moor-BNR",
-    "name": "BNR-Butterstile-Kersal-Moor-BNR Loop          ",
+    "name": "BNR-Butterstile-Kersal-Moor-BNR Loop",
     "distance": 5.53,
     "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-BNR Loop.gpx",
     "strava": "https://www.strava.com/routes/3328457732853817682"
  },
 
  {
-    "id": "BNR-Butterstile-Kersal-Moor-Singleton-BOR       ",
+    "id": "BNR-Butterstile-Kersal-Moor-Singleton-BOR",
     "name": "BNR-Butterstile-Kersal-Moor-Singleton-BOR Loop",
     "distance": 6.92,
     "gpx": "./gpx/BNR-Butterstile-Kersal-Moor-Singleton-BOR Loop.gpx",
@@ -49,7 +49,7 @@
   
  {
     "id": "stocking5k",
-    "name": "Stocking Run 5k                               ",
+    "name": "Stocking Run 5k",
     "distance": 5.3,
     "gpx": "./gpx/Stocking Run 5k.gpx",
     "strava": "https://www.strava.com/routes/3318214396095219026"
@@ -57,7 +57,7 @@
   
  {
     "id": "stocking7k",
-    "name": "Stocking Run 7k                               ",
+    "name": "Stocking Run 7k",
     "distance": 7.3,
     "gpx": "./gpx/Stocking Run 7k.gpx",
     "strava": "https://www.strava.com/routes/3318215140161349292"
@@ -65,9 +65,17 @@
   
  {
     "id": "stockingfull",
-    "name": "Stocking Run - Full                           ",
+    "name": "Stocking Run - Full",
     "distance": 8.4,
     "gpx": "./gpx/Stocking Run - Full.gpx",
     "strava": "https://www.strava.com/routes/3315817179421000540"
+ },
+  
+ {
+    "id": "loopyloop",
+    "name": "Loopy Loop Run",
+    "distance": 5.7,
+    "gpx": "./gpx/Loopy Loop Run.gpx",
+    "strava": "https://www.strava.com/routes/3440729615497429828"
  }
 ]
