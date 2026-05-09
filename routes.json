@@ -13,5 +13,12 @@
     "distance": 6.35,
     "gpx": "./gpx/3-2-1 Loops.gpx",
     "strava": "https://www.strava.com/routes/3315794949942727652"
-  }
+  },
+ {
+    "id": "sameyet",
+    "name": "Same Yet O&B",
+    "distance": 7.9,
+    "gpx": "./gpx/Same Yet O&B.gpx",
+    "strava": "https://www.strava.com/routes/3315789633100939100"
+ 
 ]
