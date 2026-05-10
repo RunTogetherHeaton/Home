@@ -108,6 +108,7 @@
 
   <h2 id="routeName"></h2>
   <p id="routeInfo"></p>
+  <p id="routeDescription" style="color:#c7cedb; line-height:1.6; max-width:800px;"></p>
 
   <div id="map"></div>
 
@@ -170,6 +171,8 @@ function openRoute(route) {
 
   document.getElementById('routeName').innerText = route.name;
   document.getElementById('routeInfo').innerText = route.distance + ' km';
+
+  document.getElementById('routeDescription').innerText = route.description || '';
 
   document.getElementById('stravaLink').href = route.strava;
   document.getElementById('gpxDownload').href = route.gpx;
